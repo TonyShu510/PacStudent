@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34d435fa6d41eb94e8805eaecbd3ed9a
+guid: 49b20562b47575748a95ec1d429dd416
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,49 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beatingSkull_R_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd938dd16a432124dac6f541216e90ec
-      internalID: 419236209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beatingSkull_R_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b09effed3222bc546ae397c15b26f285
-      internalID: 955702887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beatingSkull_R_2
+      name: HittedWizard_0
       rect:
         serializedVersion: 2
         x: 0
@@ -162,14 +120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff4610b56877c374ba85f664df84cbf1
-      internalID: -1014554001
+      spriteID: 0352366d38004d34ca0cf0214be5d7fc
+      internalID: 793782027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_3
+      name: HittedWizard_1
       rect:
         serializedVersion: 2
         x: 32
@@ -183,14 +141,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 958fa83e686c3164897f3e168c1fe1ff
-      internalID: 1555841531
+      spriteID: df464f03252846d4da17614284ac52fb
+      internalID: -208903310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_4
+      name: HittedWizard_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b5fcb040f1af2438b0e859ba941df2
+      internalID: -1098509288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HittedWizard_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b454d0ff65da44f4591e68fc37e97c4e
+      internalID: 995586403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HittedWizard_4
       rect:
         serializedVersion: 2
         x: 0
@@ -204,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64d3eef1187eb94097d0257e2022483
-      internalID: 1925306475
+      spriteID: b65b1e9a13281034585c6f178e44dab9
+      internalID: -366610545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_5
+      name: HittedWizard_5
       rect:
         serializedVersion: 2
         x: 32
@@ -225,8 +225,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6b9e67280d99d479621df0c78ce8b6
-      internalID: 2128751444
+      spriteID: 0dc05923bdef67e4787c4e9b5576945d
+      internalID: 2028538493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HittedWizard_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49da04949de4e9649a7fb6a707a27394
+      internalID: -1426452448
       vertices: []
       indices: 
       edges: []
@@ -242,12 +263,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      beatingSkull_R_1: 955702887
-      beatingSkull_R_2: -1014554001
-      beatingSkull_R_3: 1555841531
-      beatingSkull_R_0: 419236209
-      beatingSkull_R_5: 2128751444
-      beatingSkull_R_4: 1925306475
+      HittedWizard_2: -1098509288
+      HittedWizard_5: 2028538493
+      HittedWizard_1: -208903310
+      HittedWizard_3: 995586403
+      HittedWizard_6: -1426452448
+      HittedWizard_4: -366610545
+      HittedWizard_0: 793782027
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34d435fa6d41eb94e8805eaecbd3ed9a
+guid: a4c3187dd5f1514419afeae62a8063c6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beatingSkull_R_0
+      name: HolySkull_Flash_0
       rect:
         serializedVersion: 2
         x: 0
@@ -120,14 +120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd938dd16a432124dac6f541216e90ec
-      internalID: 419236209
+      spriteID: 704e93ac5246b8a4c9a266912b0d6331
+      internalID: -63583616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_1
+      name: HolySkull_Flash_1
       rect:
         serializedVersion: 2
         x: 32
@@ -141,14 +141,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b09effed3222bc546ae397c15b26f285
-      internalID: 955702887
+      spriteID: 837c6964be50dba449b5fa1edeb4dc2c
+      internalID: -1958750006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_2
+      name: HolySkull_Flash_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380a999298af3a440b1ef25fb990241f
+      internalID: 1187783861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolySkull_Flash_3
       rect:
         serializedVersion: 2
         x: 0
@@ -162,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff4610b56877c374ba85f664df84cbf1
-      internalID: -1014554001
+      spriteID: 776cea1c06a325649944e107a109a949
+      internalID: -79931036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_3
+      name: HolySkull_Flash_4
       rect:
         serializedVersion: 2
         x: 32
@@ -183,14 +204,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 958fa83e686c3164897f3e168c1fe1ff
-      internalID: 1555841531
+      spriteID: a25633aedb59d92438931bdec2df613f
+      internalID: 47549948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_4
+      name: HolySkull_Flash_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd1f2b0f16b71d4287ab99c0fe9a06d
+      internalID: 2017442273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolySkull_Flash_6
       rect:
         serializedVersion: 2
         x: 0
@@ -204,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64d3eef1187eb94097d0257e2022483
-      internalID: 1925306475
+      spriteID: 621990041cd03f740adf174f4aa60891
+      internalID: -1967634365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_5
+      name: HolySkull_Flash_7
       rect:
         serializedVersion: 2
         x: 32
@@ -225,8 +267,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6b9e67280d99d479621df0c78ce8b6
-      internalID: 2128751444
+      spriteID: 27c85c91056f9b54f8403c55d85058f6
+      internalID: -1072094796
       vertices: []
       indices: 
       edges: []
@@ -242,12 +284,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      beatingSkull_R_1: 955702887
-      beatingSkull_R_2: -1014554001
-      beatingSkull_R_3: 1555841531
-      beatingSkull_R_0: 419236209
-      beatingSkull_R_5: 2128751444
-      beatingSkull_R_4: 1925306475
+      HolySkull_Flash_5: 2017442273
+      HolySkull_Flash_7: -1072094796
+      HolySkull_Flash_6: -1967634365
+      HolySkull_Flash_0: -63583616
+      HolySkull_Flash_3: -79931036
+      HolySkull_Flash_1: -1958750006
+      HolySkull_Flash_4: 47549948
+      HolySkull_Flash_2: 1187783861
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

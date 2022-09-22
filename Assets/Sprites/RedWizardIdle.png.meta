@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34d435fa6d41eb94e8805eaecbd3ed9a
+guid: a6f1cf52d48a50f419be7e71087ee1d3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beatingSkull_R_0
+      name: RedWizardIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -120,14 +120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd938dd16a432124dac6f541216e90ec
-      internalID: 419236209
+      spriteID: 23bcbb88f39c4b64a90939d481c66a97
+      internalID: 1439304631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_1
+      name: RedWizardIdle_1
       rect:
         serializedVersion: 2
         x: 32
@@ -141,14 +141,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b09effed3222bc546ae397c15b26f285
-      internalID: 955702887
+      spriteID: b8754ce951de3124f9ec1d4d0e893775
+      internalID: 1459819145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_2
+      name: RedWizardIdle_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28571870d1a072e4fa8f2f2de4824641
+      internalID: 177043242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedWizardIdle_3
       rect:
         serializedVersion: 2
         x: 0
@@ -162,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff4610b56877c374ba85f664df84cbf1
-      internalID: -1014554001
+      spriteID: b885500b7a3e6214e95df523d7564020
+      internalID: -2117423389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_3
+      name: RedWizardIdle_4
       rect:
         serializedVersion: 2
         x: 32
@@ -183,14 +204,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 958fa83e686c3164897f3e168c1fe1ff
-      internalID: 1555841531
+      spriteID: 4e811823db3a39b479a217430383d5e8
+      internalID: 140892714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_4
+      name: RedWizardIdle_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6819d39d3e29f954591c5f7073ff2826
+      internalID: 1030672283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedWizardIdle_6
       rect:
         serializedVersion: 2
         x: 0
@@ -204,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64d3eef1187eb94097d0257e2022483
-      internalID: 1925306475
+      spriteID: d958973892c0501468475663baec4543
+      internalID: 2092647989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_5
+      name: RedWizardIdle_7
       rect:
         serializedVersion: 2
         x: 32
@@ -225,8 +267,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6b9e67280d99d479621df0c78ce8b6
-      internalID: 2128751444
+      spriteID: 4a5e3538c39d4c646a2820cb5f766c47
+      internalID: 347954659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedWizardIdle_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952558068db706b4ca88badbdf3ca62f
+      internalID: -1047265684
       vertices: []
       indices: 
       edges: []
@@ -242,12 +305,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      beatingSkull_R_1: 955702887
-      beatingSkull_R_2: -1014554001
-      beatingSkull_R_3: 1555841531
-      beatingSkull_R_0: 419236209
-      beatingSkull_R_5: 2128751444
-      beatingSkull_R_4: 1925306475
+      RedWizardIdle_0: 1439304631
+      RedWizardIdle_7: 347954659
+      RedWizardIdle_8: -1047265684
+      RedWizardIdle_5: 1030672283
+      RedWizardIdle_6: 2092647989
+      RedWizardIdle_2: 177043242
+      RedWizardIdle_4: 140892714
+      RedWizardIdle_1: 1459819145
+      RedWizardIdle_3: -2117423389
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

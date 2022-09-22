@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34d435fa6d41eb94e8805eaecbd3ed9a
+guid: 25ce45e041d167747bb6045e63c3f8b3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beatingSkull_R_0
+      name: Att_RedWizard_0
       rect:
         serializedVersion: 2
         x: 0
@@ -120,14 +120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd938dd16a432124dac6f541216e90ec
-      internalID: 419236209
+      spriteID: 6096256070323ac4697e59724c36804c
+      internalID: 493135363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_1
+      name: Att_RedWizard_1
       rect:
         serializedVersion: 2
         x: 32
@@ -141,14 +141,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b09effed3222bc546ae397c15b26f285
-      internalID: 955702887
+      spriteID: 08f3bd74f4eab1b4dbb8ef79ff07ba3e
+      internalID: 396939609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_2
+      name: Att_RedWizard_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2b47c5fdda66940964c822bdf76648
+      internalID: 510414390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Att_RedWizard_3
       rect:
         serializedVersion: 2
         x: 0
@@ -162,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff4610b56877c374ba85f664df84cbf1
-      internalID: -1014554001
+      spriteID: e0cd4f3e38f76ce428fbcfec211b93b4
+      internalID: -123666043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_3
+      name: Att_RedWizard_4
       rect:
         serializedVersion: 2
         x: 32
@@ -183,14 +204,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 958fa83e686c3164897f3e168c1fe1ff
-      internalID: 1555841531
+      spriteID: 5a1b26b4b2723654f87cd359537048c4
+      internalID: -667363364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_4
+      name: Att_RedWizard_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714345891c4701648a767a4de2de1afb
+      internalID: 758712428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Att_RedWizard_6
       rect:
         serializedVersion: 2
         x: 0
@@ -204,29 +246,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64d3eef1187eb94097d0257e2022483
-      internalID: 1925306475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beatingSkull_R_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db6b9e67280d99d479621df0c78ce8b6
-      internalID: 2128751444
+      spriteID: 7b50210e93c38984cb36ddd7fd15550d
+      internalID: 2074200722
       vertices: []
       indices: 
       edges: []
@@ -242,12 +263,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      beatingSkull_R_1: 955702887
-      beatingSkull_R_2: -1014554001
-      beatingSkull_R_3: 1555841531
-      beatingSkull_R_0: 419236209
-      beatingSkull_R_5: 2128751444
-      beatingSkull_R_4: 1925306475
+      Att_RedWizard_6: 2074200722
+      Att_RedWizard_3: -123666043
+      Att_RedWizard_5: 758712428
+      Att_RedWizard_0: 493135363
+      Att_RedWizard_2: 510414390
+      Att_RedWizard_1: 396939609
+      Att_RedWizard_4: -667363364
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

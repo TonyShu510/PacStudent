@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34d435fa6d41eb94e8805eaecbd3ed9a
+guid: e0875e53c1fbbab419901b9d308fc4f2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,91 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beatingSkull_R_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd938dd16a432124dac6f541216e90ec
-      internalID: 419236209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beatingSkull_R_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b09effed3222bc546ae397c15b26f285
-      internalID: 955702887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beatingSkull_R_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff4610b56877c374ba85f664df84cbf1
-      internalID: -1014554001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beatingSkull_R_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 958fa83e686c3164897f3e168c1fe1ff
-      internalID: 1555841531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beatingSkull_R_4
+      name: HolySkull_0
       rect:
         serializedVersion: 2
         x: 0
@@ -204,14 +120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64d3eef1187eb94097d0257e2022483
-      internalID: 1925306475
+      spriteID: 783827edd8a5faa45bf87be448ccd0eb
+      internalID: -1659311253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beatingSkull_R_5
+      name: HolySkull_1
       rect:
         serializedVersion: 2
         x: 32
@@ -225,8 +141,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6b9e67280d99d479621df0c78ce8b6
-      internalID: 2128751444
+      spriteID: 3bdb02688bf8ead43a374c7d13f46ecb
+      internalID: 1207402097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolySkull_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa2ee1c21408ab4790c255d04e40de3
+      internalID: 2067594561
       vertices: []
       indices: 
       edges: []
@@ -242,12 +179,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      beatingSkull_R_1: 955702887
-      beatingSkull_R_2: -1014554001
-      beatingSkull_R_3: 1555841531
-      beatingSkull_R_0: 419236209
-      beatingSkull_R_5: 2128751444
-      beatingSkull_R_4: 1925306475
+      HolySkull_0: -1659311253
+      HolySkull_1: 1207402097
+      HolySkull_2: 2067594561
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

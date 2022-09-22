@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 345ded4534c565947962d1f5f21fae92
+guid: 008cecfc9bbb46541a6fce303f7aa40c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wizard_0
+      name: Holy_Wizard_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 32
-        width: 31
-        height: 31
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,20 +120,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a7e6eda47b5ae0498e40cecd4b256a0
-      internalID: 970110930
+      spriteID: 76b099ffea72d59428e8963578cb7891
+      internalID: -559136528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wizard_1
+      name: Holy_Wizard_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 32
-        width: 31
-        height: 31
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54cbe12b5072edb4f8db8eb8db9a3e50
-      internalID: -1538819774
+      spriteID: 07d433aea094e784b9b4630c6330f4b0
+      internalID: 878461539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wizard_2
+      name: Holy_Wizard_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 32
-        width: 31
-        height: 31
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4351e907bc42d441850a8aeb90eac30
-      internalID: -2003719074
+      spriteID: 010c9d4dfc9d39a4caf0de1b7565cf01
+      internalID: -1453562780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wizard_3
+      name: Holy_Wizard_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 0
         y: 32
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +183,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29d0d13133aa3d148b7457952de64be9
-      internalID: -32982069
+      spriteID: 80819fd01647b0a42a5e0b285177a02b
+      internalID: 569199102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wizard_4
+      name: Holy_Wizard_4
       rect:
         serializedVersion: 2
-        x: 1
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a908fd94e09d143a9513d963fda100
+      internalID: -588944202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Holy_Wizard_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c721b10992f3c08469c726e9252e1e9a
+      internalID: -210399207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Holy_Wizard_6
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be5630daf60f1ed4ca733d9eebb4600b
-      internalID: 719907586
+      spriteID: 52bc5eb56a658e943925949fa1dd28f6
+      internalID: -1007335054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wizard_5
+      name: Holy_Wizard_7
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b65de3cf269ed83479a34057c7e1b0cd
-      internalID: 385733978
+      spriteID: 74375ff3c725af044871bdee761c8bba
+      internalID: -1824269356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wizard_6
+      name: Holy_Wizard_8
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2403a906b6ef51e4aa08e8b565fd0107
-      internalID: 376464061
+      spriteID: 1f57137ba53d1db4f8a7dfd8d9436bcf
+      internalID: 1003918521
       vertices: []
       indices: 
       edges: []
@@ -263,13 +305,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wizard_0: 970110930
-      wizard_2: -2003719074
-      wizard_3: -32982069
-      wizard_4: 719907586
-      wizard_5: 385733978
-      wizard_1: -1538819774
-      wizard_6: 376464061
+      Holy_Wizard_2: -1453562780
+      Holy_Wizard_4: -588944202
+      Holy_Wizard_0: -559136528
+      Holy_Wizard_6: -1007335054
+      Holy_Wizard_7: -1824269356
+      Holy_Wizard_1: 878461539
+      Holy_Wizard_3: 569199102
+      Holy_Wizard_8: 1003918521
+      Holy_Wizard_5: -210399207
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
