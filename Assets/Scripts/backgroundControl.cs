@@ -22,12 +22,17 @@ public class backgroundControl : MonoBehaviour
 
     public void OnClickUp()
     {
+        gameObject.SetActive(false);
+        
         backgroundMusic = backgroundMusic.GetComponent<AudioSource>();
+                //backgroundMusic.Play();
+
 
         ememySound = ememySound.GetComponent<AudioSource>();
-        ememySound.PlayDelayed(backgroundMusic.clip.length);
+        //ememySound.PlayDelayed(backgroundMusic.clip.length);
+
+
 
         Debug.Log("GameStart!");
-        backgroundMusic.Play();
     }
 }
