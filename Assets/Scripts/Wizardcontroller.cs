@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wizardcontroller : MonoBehaviour
 {
-    public float walkSpeed = 1;
+    public float walkSpeed = 0.1;
     float moveDirectionX, moveDirectionY = 0;
     Animator wizardAnimator;
 
@@ -44,7 +44,7 @@ public class Wizardcontroller : MonoBehaviour
             moveDirectionY = 0;
         }
 
-        //MoveDirection(moveDirectionX, moveDirectionY);
+        MoveDirection(moveDirectionX, moveDirectionY);
 
     }
 
@@ -56,10 +56,10 @@ public class Wizardcontroller : MonoBehaviour
         theScale.x = ScaleX;
         transform.localScale = theScale;
     }
-    /*
+    
     private void MoveDirection(float x, float y)
     {
         Vector3 movement = new Vector2(x, y);
         transform.Translate(movement * Time.deltaTime * walkSpeed, Space.World);
-    }*/
+    }
 }
