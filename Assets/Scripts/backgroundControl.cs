@@ -4,36 +4,38 @@ using UnityEngine;
 
 public class BackgroundControl : MonoBehaviour
 {
-    public AudioSource backgroundMusic;
+    public AudioSource backgroundMusic, ememySound;
+    bool gameStarted = false;
+
+    float time;
     // Start is called before the first frame update
     void Start()
     {
 
+        backgroundMusic = backgroundMusic.GetComponent<AudioSource>();
+        ememySound = ememySound.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (gameStarted)
         {
-            Vector2 pointTo= Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log(pointTo);
-            if((pointTo.x>-0.80f && pointTo.x < 0.8f) && (pointTo.y>-0.30f && pointTo.y < 0.3f))
-            {
-                StartMusic();
-            }
+            time += Time.deltaTime;
         }
+        if (time >= backgroundMusic.clip.length)
+        {
+            ememySound.Play();
+        }
+
     }
 
     public void StartMusic()
     {
-        gameObject.SetActive(false);
 
-        backgroundMusic = backgroundMusic.GetComponent<AudioSource>();
         backgroundMusic.Play();
-
-
-
+        time = Time.deltaTime;//refresh the value
+        gameStarted = true;//game started
         Debug.Log("GameStart!");
 
 
