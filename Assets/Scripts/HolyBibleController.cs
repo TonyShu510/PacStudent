@@ -4,51 +4,43 @@ using UnityEngine;
 
 public class HolyBibleController : MonoBehaviour
 {
-    bool gameStats = false;
-    public AudioSource backgroundMusic, enemySound;
+    BackgroundControl gameControl;
     float time;
     private void Start()
     {
-        backgroundMusic = backgroundMusic.GetComponent<AudioSource>();
-        enemySound = enemySound.GetComponent<AudioSource>();
+        gameControl = GameObject.FindGameObjectWithTag("Controller").GetComponent<BackgroundControl>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (backgroundMusic.isPlaying && !gameStats)
+        if (BackgroundControl.gameStarted)
         {
-            StartCoroutine(GameStart());
-        }
+            //game start and start count
+            time += Time.deltaTime;
 
-        if (time > 0.4f)
-        {
-            time -= 0.4f;
-        }
-        time += Time.deltaTime;
-        if (gameStats == true&& time >0.4)
-        {
-            Vector3 holyBibleScale = transform.localScale;
-            if (holyBibleScale.x > 0.5)
-            {
-                holyBibleScale.x--;
-                holyBibleScale.y--;
-                transform.localScale = holyBibleScale;
-            }
-            else
-            {
+            //flash speed
+            float speed = 0.4f;
+            if (time > speed)
+                {
+                    time -= speed;
 
-                holyBibleScale.x++;
-                holyBibleScale.y++;
-                transform.localScale = holyBibleScale;
+                Vector3 holyBibleScale = transform.localScale;
+                //change size to make it flash
+                if (holyBibleScale.x > 0.5)
+                {
+                    holyBibleScale.x--;
+                    holyBibleScale.y--;
+                    transform.localScale = holyBibleScale;
+                }
+                else
+                {
+
+                    holyBibleScale.x++;
+                    holyBibleScale.y++;
+                    transform.localScale = holyBibleScale;
+                    }
             }
         }
-    }
-    IEnumerator GameStart()
-    {
-        enemySound = enemySound.GetComponent<AudioSource>();
-        yield return new WaitForSecondsRealtime(backgroundMusic.clip.length);
-        enemySound.Play();
-        gameStats = true;
     }
 }

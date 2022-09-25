@@ -5,7 +5,9 @@ using UnityEngine;
 public class BackgroundControl : MonoBehaviour
 {
     public AudioSource backgroundMusic, ememySound;
-    bool gameStarted = false;
+    public static bool gameStarted = false;
+    public GridController gridContro;
+    public GameObject gridManually;
 
     float time;
     // Start is called before the first frame update
@@ -14,30 +16,30 @@ public class BackgroundControl : MonoBehaviour
 
         backgroundMusic = backgroundMusic.GetComponent<AudioSource>();
         ememySound = ememySound.GetComponent<AudioSource>();
+        gridContro = gridContro.GetComponent<GridController>();
+        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (gameStarted)
-        {
-            time += Time.deltaTime;
-        }
-        if (time >= backgroundMusic.clip.length)
-        {
-            ememySound.Play();
-        }
 
-    }
-
-    public void StartMusic()
+    IEnumerator GameStart()
     {
 
         backgroundMusic.Play();
-        time = Time.deltaTime;//refresh the value
-        gameStarted = true;//game started
+        yield return new WaitForSecondsRealtime(backgroundMusic.clip.length);
         Debug.Log("GameStart!");
+        //close the manually one
+        gridManually.SetActive(false);
+        //play ememy walk sound
+        ememySound.Play();
+        //generate the map
+        gridContro.GenerateGrid();
+        //change game stats
+        gameStarted = true;
+    }
+    public void StartGameButton()
+    {
 
+        StartCoroutine(GameStart());
 
     }
 

@@ -33,6 +33,8 @@ public class Wizardcontroller : MonoBehaviour
             float testX, testY;
             testX = transform.localPosition.x - 0;
             testY = transform.localPosition.y - 0;
+
+            //hardcode to walk clockwise
             if (testX == -3.84f && testY == 1.6f)
             {
                 startPosition = transform.localPosition;
