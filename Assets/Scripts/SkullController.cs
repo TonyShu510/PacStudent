@@ -5,7 +5,7 @@ using UnityEngine;
 public class SkullController : MonoBehaviour
 {
     public float walkSpeed = 1;
-    float moveDirectionX, moveDirectionY = 0;
+    float moveDirectionX, moveDirectionY;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +15,7 @@ public class SkullController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        /*
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown("w"))
         {
             Turn(-90f, 1f);
@@ -39,7 +39,8 @@ public class SkullController : MonoBehaviour
             Turn(0f, -1f);
             moveDirectionX = -1;
             moveDirectionY = 0;
-        }
+        
+        }*/
     }
 
 
