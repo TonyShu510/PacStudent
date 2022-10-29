@@ -9,6 +9,8 @@ public class GridController : MonoBehaviour
     int arrayWidth , arrayHeight;
     [SerializeField] GameObject[] prefab_list;
     [SerializeField] Canvas windowIn;
+    [SerializeField] GameObject[] skull_prefab_list;
+    [SerializeField] GameObject red_Wizard_Prefab;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +24,12 @@ public class GridController : MonoBehaviour
 
     public void GenerateGrid()
     {
-        arrayHeight = nextLevelData.GetLength(0);  //generate whole map
-        arrayWidth = nextLevelData.GetLength(1);   
 
+        // map size
+        arrayHeight = nextLevelData.GetLength(0);  
+        arrayWidth = nextLevelData.GetLength(1);   
+        
+        //level generate
         for (int x = 0; x< arrayWidth; x++)//Row
         {
             for(int y = 0; y< arrayHeight; y++)//Coloum
@@ -85,5 +90,31 @@ public class GridController : MonoBehaviour
                 }
             }
         }
+
+
+        //element generate
+        //red Wizard in top left
+        var redWizard = Instantiate(red_Wizard_Prefab, new Vector3((arrayHeight-3)*-0.32f, (arrayWidth-2)*0.32f, 0), Quaternion.identity);
+        redWizard.transform.SetParent(windowIn.transform, false);
+        redWizard.transform.localPosition = redWizard.transform.localPosition;
+
+        
+        var skull01 = Instantiate(skull_prefab_list[0], new Vector3((0)*-0.32f, (1)*0.32f, 0), Quaternion.identity);
+        skull01.transform.SetParent(windowIn.transform, false);
+        skull01.transform.localPosition = skull01.transform.localPosition - new Vector3(0, 0.32f);
+
+        var skull02 = Instantiate(skull_prefab_list[1], new Vector3((0)*-0.32f, (-1)*0.32f, 0), Quaternion.identity);
+        skull02.transform.SetParent(windowIn.transform, false);
+        skull02.transform.localPosition = skull02.transform.localPosition - new Vector3(0, 0.32f);
+        
+        var skull03 = Instantiate(skull_prefab_list[2], new Vector3((1)*-0.32f, (0)*0.32f, 0), Quaternion.identity);
+        skull03.transform.SetParent(windowIn.transform, false);
+        skull03.transform.localPosition = skull03.transform.localPosition - new Vector3(0, 0.32f);
+        
+        var skull04 = Instantiate(skull_prefab_list[3], new Vector3((-1)*-0.32f, (0)*0.32f, 0), Quaternion.identity);
+        skull04.transform.SetParent(windowIn.transform, false);
+        skull04.transform.localPosition = skull04.transform.localPosition - new Vector3(0, 0.32f);
+
     }
+
 }
