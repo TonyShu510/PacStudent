@@ -28,7 +28,6 @@ public class GridController : MonoBehaviour
         // map size
         arrayHeight = nextLevelData.GetLength(0);  
         arrayWidth = nextLevelData.GetLength(1);   
-        
         //level generate
         for (int x = 0; x< arrayWidth; x++)//Row
         {
@@ -116,5 +115,7 @@ public class GridController : MonoBehaviour
         skull04.transform.localPosition = skull04.transform.localPosition - new Vector3(0, 0.32f);
 
     }
+
+
 
 }
