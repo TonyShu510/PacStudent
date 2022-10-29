@@ -25,12 +25,12 @@ public class BackgroundControl : MonoBehaviour
     {
 
         backgroundMusic.Play();
+        //close the manually one
+        gridManually.SetActive(false);
         //generate the map
         gridContro.GenerateGrid();
         yield return new WaitForSecondsRealtime(backgroundMusic.clip.length);
         Debug.Log("GameStart!");
-        //close the manually one
-        gridManually.SetActive(false);
         //play ememy walk sound
         ememySound.Play();
         //change game stats
