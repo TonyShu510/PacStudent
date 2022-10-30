@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5557570653570040068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5557570653570040069}
+  - component: {fileID: 5557570653570040066}
+  m_Layer: 5
+  m_Name: GridControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5557570653570040069
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5557570653570040068}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.11764705, y: 0.11764705, z: 0.11764705}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5557570653570040066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5557570653570040068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9877b18b586567f409927ff902106076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab_list:
+  - {fileID: 0}
+  - {fileID: 6665975199885745465, guid: a6e476cae816f9a46a33e165b827b7a9, type: 3}
+  - {fileID: 6321689957621079530, guid: 866e2c90b1dcd3e4b8f09d1575fe6bac, type: 3}
+  - {fileID: 8540068402505529745, guid: 9a564d11fc4d0dd49bb4cf2d505118cc, type: 3}
+  - {fileID: 5821496657721123032, guid: 2a2e3885e4415a647a5cefc90f423139, type: 3}
+  - {fileID: 3820575921988008469, guid: e2b259f26e9e993438764564a9dcec0a, type: 3}
+  - {fileID: 3583679967672946709, guid: ec5125fe8f7c9d345b5f9c7d95e37f59, type: 3}
+  - {fileID: 8250327909043210540, guid: d569a05ee7bbfea42b8d762cc9cd7cff, type: 3}
+  windowIn: {fileID: 0}
+  skull_prefab_list:
+  - {fileID: 7114230528484357681, guid: d2d72ee3edeae2941b2a26794240a5c3, type: 3}
+  - {fileID: 3936969858042552109, guid: 00f1cfef07123ff46837531fde8b9688, type: 3}
+  - {fileID: 7628406607110775430, guid: 8d06f557901ddf74ca14038cda537c3a, type: 3}
+  - {fileID: 8038110234505830093, guid: 2a1647b51836c834993c2eda422ebf1c, type: 3}
+  red_Wizard_Prefab: {fileID: 9152131715333311098, guid: 05bbae09d2d1f6e418daa8c1d62f16be, type: 3}

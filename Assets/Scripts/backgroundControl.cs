@@ -13,7 +13,7 @@ public class BackgroundControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        DontDestroyOnLoad(gameObject);
         backgroundMusic = backgroundMusic.GetComponent<AudioSource>();
         ememySound = ememySound.GetComponent<AudioSource>();
         gridContro = gridContro.GetComponent<GridController>();
@@ -42,5 +42,9 @@ public class BackgroundControl : MonoBehaviour
         StartCoroutine(GameStart());
 
     }
-
+    public void LoadLevel(string lv){
+        string sceneName;
+        sceneName = "Spirit Elimination_Level"+lv;
+        Debug.Log(sceneName);
+    }
 }
