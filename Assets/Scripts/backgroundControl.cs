@@ -4,29 +4,36 @@ using UnityEngine;
 
 public class BackgroundControl : MonoBehaviour
 {
-    public AudioSource backgroundMusic, ememySound;
+    public AudioSource backgroundMusic, ememySound, pacStudentStepSound;
     public static bool gameStarted = false;
     public GridController gridContro;
-    public GameObject gridManually;
+    PacStudentController pacStudent;
 
     float time;
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
         backgroundMusic = backgroundMusic.GetComponent<AudioSource>();
         ememySound = ememySound.GetComponent<AudioSource>();
         gridContro = gridContro.GetComponent<GridController>();
+        pacStudentStepSound = pacStudentStepSound.GetComponent<AudioSource>();
+        pacStudent = GameObject.FindGameObjectWithTag("Player").GetComponent<PacStudentController>();
+        
         
     }
-
+    void LateUpdate(){
+        Debug.Log(pacStudent.movingBool);
+        if(pacStudent.movingBool){
+            pacStudentStepSound.Play();
+        }else{
+            pacStudentStepSound.Pause();
+        }
+    }
 
     IEnumerator GameStart()
     {
 
         backgroundMusic.Play();
-        //close the manually one
-        gridManually.SetActive(false);
         //generate the map
         gridContro.GenerateGrid();
         yield return new WaitForSecondsRealtime(backgroundMusic.clip.length);
@@ -41,10 +48,5 @@ public class BackgroundControl : MonoBehaviour
 
         StartCoroutine(GameStart());
 
-    }
-    public void LoadLevel(string lv){
-        string sceneName;
-        sceneName = "Spirit Elimination_Level"+lv;
-        Debug.Log(sceneName);
     }
 }

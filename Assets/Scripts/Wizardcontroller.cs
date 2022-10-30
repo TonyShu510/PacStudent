@@ -9,13 +9,11 @@ public class Wizardcontroller : MonoBehaviour
     float currentTime, moveDirectionX, moveDirectionY, distanceBlocks = 0;
     Vector3 startPosition;
     Animator wizardAnimator;
-    Scene currentScene;
     Vector2 borderSize= new Vector2(4.8f, 7.36f);
 
     // Start is called before the first frame update
     void Start()
     {
-        currentScene = SceneManager.GetActiveScene();
         
         startPosition = transform.localPosition;
         distanceBlocks = (borderSize.x-startPosition.x)/0.32f;
@@ -26,9 +24,7 @@ public class Wizardcontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentScene.name);
         if(gameObject.scene.name == "Start Scene"){
-        Debug.Log(currentScene);
             StartScreenRouta();
         }
     }
@@ -129,32 +125,6 @@ public class Wizardcontroller : MonoBehaviour
         }
 
 
-        /*
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown("w"))
-        {
-            Turn(-90f, 1f);
-            moveDirectionX = 0;
-            moveDirectionY = 1;
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("s"))
-        {
-            Turn(90f, 1f);
-            moveDirectionX = 0;
-            moveDirectionY = -1;
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown("a"))
-        {
-            Turn(0f, 1f);
-            moveDirectionX = -1;
-            moveDirectionY = 0;
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown("d"))
-        {
-            Turn(0f, -1f);
-            moveDirectionX = 1;
-            moveDirectionY = 0;
-        }
-        */
 
     }
     

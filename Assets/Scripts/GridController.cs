@@ -17,7 +17,7 @@ public class GridController : MonoBehaviour
     {
         //if add more level need change the code here
         nextLevelData = LevelGenerator.levelMap01;
-        //GenerateGrid();
+        GenerateGrid();
 
     }
 
