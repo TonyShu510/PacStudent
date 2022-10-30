@@ -1,94 +1,91 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Wizardcontroller : MonoBehaviour
 {
     float timeToNextBlock = 0.1f; //speed of pass through each block
-    float currentTime, moveDirectionX, moveDirectionY = 0;
-    int distanceBlocks;
+    float currentTime, moveDirectionX, moveDirectionY, distanceBlocks = 0;
     Vector3 startPosition;
     Animator wizardAnimator;
-    public AudioSource ememySound;
+    Scene currentScene;
+    Vector2 borderSize= new Vector2(4.8f, 7.36f);
 
     // Start is called before the first frame update
     void Start()
     {
-        transform.localPosition = new Vector3(-3.84f, 1.6f, 0f);    //start position
-        ememySound = ememySound.GetComponent<AudioSource>();
+        currentScene = SceneManager.GetActiveScene();
         
+        startPosition = transform.localPosition;
+        distanceBlocks = (borderSize.x-startPosition.x)/0.32f;
+        ControlDirection("right");
+        currentTime = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //check gameobject position and give direction to make it clockwise
-        //start when play ememysound
-        if (ememySound.isPlaying)
-        {
-            wizardAnimator = GetComponent<Animator>();
-            wizardAnimator.SetBool("Gaming", true);
-            wizardAnimator.SetBool("Moving", true);
+        Debug.Log(currentScene.name);
+        if(gameObject.scene.name == "Start Scene"){
+        Debug.Log(currentScene);
+            StartScreenRouta();
+        }
+    }
 
-            float testX, testY;
-            testX = transform.localPosition.x - 0;
-            testY = transform.localPosition.y - 0;
+
+    private void StartScreenRouta()
+    {
+        
+            wizardAnimator = GetComponent<Animator>();
+            wizardAnimator.SetBool("HolyStats", true);
 
             //hardcode to walk clockwise
-            if (testX == -3.84f && testY == 1.6f)
+            if (Vector2.Distance(transform.localPosition, new Vector2(-borderSize.x,-borderSize.y))<0.0001)
             {
                 startPosition = transform.localPosition;
-                distanceBlocks = 7;
+                distanceBlocks = (borderSize.y * 2f)/0.32f;
                 ControlDirection("up");
                 currentTime = 0;
             }
-            else if (testX == -3.84f && testY == 3.84f)
+            else if (Vector2.Distance(transform.localPosition, new Vector2(-borderSize.x,borderSize.y))<0.0001)
             {
                 startPosition = transform.localPosition;
-                distanceBlocks = 11;
+                distanceBlocks = (borderSize.x * 2f)/0.32f;
                 ControlDirection("right");
                 currentTime = 0;
             }
-            else if (testX == -0.32f && testY == 3.84f)
+            else if (Vector2.Distance(transform.localPosition, new Vector2(borderSize.x,borderSize.y))<0.0001)
             {
                 startPosition = transform.localPosition;
-                distanceBlocks = 4;
+                distanceBlocks = (borderSize.y * 2f)/0.32f;
                 ControlDirection("down");
                 currentTime = 0;
             }
-            else if (testX == -0.32f && testY == 2.56f)
+            else if (Vector2.Distance(transform.localPosition, new Vector2(borderSize.x,-borderSize.y))<0.0001)
             {
                 startPosition = transform.localPosition;
-                distanceBlocks = 11;
+                distanceBlocks = (borderSize.x * 2f)/0.32f;
                 ControlDirection("left");
-                currentTime = 0;
-            }
-            else if (testX == -0.32f && testY == 2.56f)
-            {
-                startPosition = transform.localPosition;
-                distanceBlocks = 11;
-                ControlDirection("left");
-                currentTime = 0;
-            }
-            else if (testX == -3.84f && testY == 2.56f)
-            {
-                startPosition = transform.localPosition;
-                distanceBlocks = 4;
-                ControlDirection("up");
                 currentTime = 0;
             }
 
             currentTime += Time.deltaTime;
             MoveDirection(moveDirectionX, moveDirectionY);
-        }
     }
-
 
     private void Turn(float rotZ, float ScaleX)
     {
         transform.rotation = Quaternion.AngleAxis(rotZ, Vector3.forward);
+       
+        //face to left
         Vector3 theScale = transform.localScale;
-        theScale.x = ScaleX;
+        if(ScaleX<0){
+        theScale.x = -theScale.x;
+        }else{
+        theScale.x = Mathf.Abs(theScale.x);
+        }
+
         transform.localScale = theScale;
     }
     
@@ -97,6 +94,10 @@ public class Wizardcontroller : MonoBehaviour
         float moveTime = currentTime / timeToNextBlock / distanceBlocks;
         Vector3 movement = new Vector2(startPosition.x + x* distanceBlocks, startPosition.y + y* distanceBlocks);
         transform.localPosition = Vector3.Lerp(startPosition, movement, moveTime);
+        
+        if (Vector2.Distance(transform.localPosition, new Vector2(borderSize.x,-borderSize.y))<0.001){
+            transform.localPosition = movement;
+        }
     }
 
     private void ControlDirection(string wizardDirection)
